@@ -7,6 +7,7 @@ def main():
     print ("Welcome to Calculator Ecek Ecek")
     print ("Ketik (1) kalau mau penambahan")
     print ("Ketik (2) kalau mau pengurangan")
+    print ("Ketik (3) kalau mau perkalian")
 
     global inputOrang
     inputOrang = 0
@@ -52,8 +53,44 @@ def main():
         
         #PENGURANGAN
         elif int(inputOrang)  == 2:
-            print("Masukan angka-angka yang mau kalian tambahkan, ")
+            print("Masukan angka utama yang ingin dikurang")
+            angkaUtama = int(input("Angka utama: "))
+            print ("")
+            print ("Masukan dengan angka-angka berapa saja ingin dikurang!")
             print("ketik (0) kalau sudah selesai!")
+            listAngkaPengurangan = []
+            InputAngka = 1
+            while InputAngka != 0:
+                InputAngka = int(input(""))
+                listAngkaPengurangan.append(InputAngka)
+            
+            #HITUNG DAN PRINT HASIL
+            angkaHasil = angkaUtama - sum(listAngkaPengurangan)
+            print ("Hasil: " + str(angkaHasil))
+            mauUlang()
+        
+        #PERKALIAN
+        elif int(inputOrang)  == 3:
+            print ("")
+            print ("Masukan angka-angka berapa saja yang ingin dikali!")
+            print("ketik (0) kalau sudah selesai!")
+            listAngkaPerkalian = []
+            InputAngka = 1
+            while InputAngka != 0:
+                InputAngka = int(input(""))
+                if InputAngka != 0:
+                    listAngkaPerkalian.append(InputAngka)
+            
+            #HITUNG DAN PRINT HASIL
+            i = 1
+            angkaHasil = listAngkaPerkalian[0] * listAngkaPerkalian[i]
+            i += 1
+            while i < len(listAngkaPerkalian):
+                angkaHasil = angkaHasil * listAngkaPerkalian[i]
+                i += 1
+
+            print ("Hasil: " + str(angkaHasil))
+            mauUlang()
 
         #ERRORLOG
         else:
