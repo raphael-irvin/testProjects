@@ -19,6 +19,9 @@ def twoBy():
     print (len(listAngka))
     print ("")
 
+#1. YANG ANGKANYA DOBEL GA DIHITUNG (1 1 // 2 2 // 3 3)
+#2. YANG JUMLAHNYA DIATAS 5 GA DIHITUNG (1 5 // 2 5)
+
 def threeBy():
     listAngka = []
     for x in list:
@@ -36,5 +39,19 @@ def threeBy():
     print ("JUMLAH KOMBINASI:")
     print (len(listAngka))
 
-twoBy()
-threeBy()
+def combination():
+    listAngka = []
+    for x in list:
+        i = 0
+        while i < len(list):
+            if x != list[i]:
+                a = f'{x} {list[i]}'
+                print (a)
+                listAngka.append(a)
+            else:
+                print ("DUPLICATE!")
+            i += 1
+
+#twoBy()
+#threeBy()
+combination()
