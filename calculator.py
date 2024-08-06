@@ -48,7 +48,7 @@ def main():
                 angkaHasil = sum(listAngka)
                 print ("Hasil: " + str(angkaHasil))
                 mauUlang()
-
+            
             processAngka()
         
         #PENGURANGAN
