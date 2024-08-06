@@ -85,7 +85,7 @@ def main():
             i = 1
             angkaHasil = listAngkaPerkalian[0] * listAngkaPerkalian[i]
             i += 1
-            while i < len(listAngkaPerkalian):
+            while i != len(listAngkaPerkalian):
                 angkaHasil = angkaHasil * listAngkaPerkalian[i]
                 i += 1
 

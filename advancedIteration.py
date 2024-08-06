@@ -7,6 +7,6 @@ for x in list: #-> Akan ngecek setiap elemen di list
     i = 0 #-> Setiap masuk elemen baru, i kita reset jadi 0
 
     while i<len(list): #-> Selama i lebih kecil dari panjang list:
-        print (f'{str(x)} {str(list[i])}')
+        print (f'{x} {list[i]}')
         i += 1
     print ("")
