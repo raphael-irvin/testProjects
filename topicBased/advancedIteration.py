@@ -46,6 +46,8 @@ def kunciJawaban1():
                 a = f'{x} {list[i]}'
                 listAngka.append(a)
                 print (a)
+            else:
+                pass
             i += 1
 
     print("")
