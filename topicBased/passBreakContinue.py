@@ -24,7 +24,6 @@ def continueFunc():
         if i%2 == 0:
             print (i)
         else:
-            i += 1
             continue #-> Continue = Skip the rest of the loop, immediately start the loop from top!
         print (f'NUMBER {i} IS PROCESSED!')
         i += 1
