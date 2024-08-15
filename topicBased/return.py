@@ -9,5 +9,8 @@ def hitungkurang(a,b):
 a1=int(input("angka pertama: "))
 a2=int(input("angka kedua: "))
 
-hasiltambah = hitungtambah(a1, a2)
-hasilkurang = hitungkurang(a1, a2)
+hasiltambah = hitungtambah(a1, a2) #tanpa return di function hitungtambah, hasiltambah gatau valuenya apa
+hasilkurang = hitungkurang(a1, a2) #tanpa return di function hitungkurang, hasilkurang gatau valuenya apa
+
+print(hasiltambah)
+print(hasilkurang)
