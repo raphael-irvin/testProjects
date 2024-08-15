@@ -31,6 +31,19 @@ thisdict4 = dict(brand = "honda", year = 2003, electric = False)
 print(thisdict4)
 print(thisdict4.keys()) #dictionaryname.keys() is used to get the list of keys in a dictionary
 print(thisdict4.values()) #dictionaryname.values() is used to get the list of values in a dictionary
+
 print("")
-thisdict4["color"] = "white" #this formula can be used to add a new key:value pair
+thisdict4["color"] = "white" #this formula can be used to add/change a key:value pair
+thisdict4.update({"color": "white"}) #or use thisdict4.update({key:value})
 print(thisdict4)
+
+print("")
+thisdict5 = dict(brand = "honda", year = 2003, electric = False)
+thisdict5.pop("brand") #dictionaryname.pop("key") can be used to remove a key:value pair in a dict
+thisdict5.popitem() #dictionaryname.popitem() can be used to remove the LAST key:value pair in a dict
+del thisdict5["year"] #del dictionaryname["key"] can also be used to remove a key:value pair in a dict
+print(thisdict5)
+
+thisdict5 = dict(brand = "honda", year = 2003, electric = False)
+thisdict5.clear() #this can be used to clear/empty a dictionary
+print(thisdict5)
