@@ -1,3 +1,5 @@
+#SOURCE: https://www.w3schools.com/python/python_dictionaries.asp 
+
 #Dictionaries are made out of key:value pairs
 thisdict = {
     "brand": "honda",
